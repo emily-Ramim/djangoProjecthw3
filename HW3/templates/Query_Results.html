@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type= "text/css" href="{% static '/style.css' %}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <h1 style="text-align: center">Simple Pokemon League Website</h1>
+ <a href="add_a_pokemon.html" target="myframe">Add A Pokemon</a><br>
+<a href="Index.html" target="myframe">Index</a>
+<h2>
+    Strong Pokemons that are legendary, by generation:
+</h2>
+
+<table>
+    <th>Name</th>
+    <th>Generation</th>
+    {% for Pokemons in sql_res %}
+    <tr>
+        <td>{{Pokemons.Name}}</td>
+        <td>{{Pokemons.Generation}}</td>
+    </tr>
+    {%endfor%}}
+</table>
+
+
+</body>
+</html>

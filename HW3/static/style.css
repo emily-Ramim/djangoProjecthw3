@@ -1,0 +1,25 @@
+body{
+    background-color: forestgreen;
+}
+
+h1{
+    color: whitesmoke;
+    font-family: Luminari;
+}
+h2{
+    color: whitesmoke;
+    font-family: Luminari;
+
+}
+.rectangle{
+    background-color: blue;
+    text-align: center;
+    border: 5px outset black;
+    width: 500px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

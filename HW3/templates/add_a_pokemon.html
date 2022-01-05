@@ -1,0 +1,28 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+ <link rel="stylesheet" type= "text/css" href="{% static '/style.css' %}">
+<head>
+
+    <meta charset="UTF-8">
+    <title>hdhdh</title>
+</head>
+ <a href="Query_Results.html" target="myframe">Query Results</a><br>
+<a href="Index.html" target="myframe">Index</a>
+<body>
+    <h1 style="text-align: center">Simple Pokemon League Website</h1>
+<form method="POST" style="text-align: -webkit-center">
+    Name: <input type="text" name="Name" maxlength="50" minlength="2"><br>
+    Type: <input type="text" name="Type" maxlength="50"><br>
+    Generation:<input name="Generation" type="number" min="1" max="6"><br>
+    Legendary:<input type="checkbox" name="Legendary" checked="true"><br>
+    Hp:<input type="number" name="Hp" min="1" max="300"><br>
+    Attack:<input type="number" name="Attack" min="1" max="300"><br>
+    Defence:<input type="number" name="Defence" min="1" max="300"><br>
+    <input type="submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>
