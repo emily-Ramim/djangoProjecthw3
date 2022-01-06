@@ -1,11 +1,23 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type= "text/css" href="{% static '/style.css' %}">
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>query_results</title>
+
+      <style>
+    body{
+    background-color: forestgreen;
+    color: whitesmoke;
+    font-family: Luminari;
+}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  </style>
 </head>
 <body>
 
@@ -17,13 +29,13 @@
     Strong Pokemons that are legendary, by generation:
 </h2>
 
-<table>
+<table class="center">
     <th>Name</th>
     <th>Generation</th>
-    {% for Pokemons in sql_res %}
+    {% for pokemon in sql_res %}
     <tr>
-        <td>{{Pokemons.Name}}</td>
-        <td>{{Pokemons.Generation}}</td>
+        <td>{{pokemon.Name}}</td>
+        <td>{{pokemon.Generation}}</td>
     </tr>
     {%endfor%}}
 </table>

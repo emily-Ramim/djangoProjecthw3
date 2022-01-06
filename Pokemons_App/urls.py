@@ -2,6 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.Index, name='Index'),
+    path('', views.Query_Results, name='Query_Results')
 
 ]
