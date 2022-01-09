@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>query_results</title>
+
+      <style>
+    body{
+    background-color: forestgreen;
+    color: whitesmoke;
+    font-family: Luminari;
+}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  </style>
+</head>
+<body>
+
+
+    <h1 style="text-align: center">Simple Pokemon League Website</h1>
+ <a href="add_a_pokemon" target="myframe">Add A Pokemon</a><br>
+<a href="index" target="myframe">Index</a>
+<h2>
+    Strong Pokemons that are legendary, by generation:
+</h2>
+
+<table  border="1" style="margin-left: 300px">
+    <th>Generation</th>
+    <th>Name</th>
+    {% for content in strong %}
+    <tr>
+        <td>{{content.Generation}}</td>
+        <td>{{content.Name}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+<h3>Dominant Pokemons by type</h3>
+
+<table  border="1" style="margin-left: 300px">
+    <th>Type</th>
+    <th>Pokemon</th>
+    {% for content in dominant %}
+    <tr>
+        <td>{{content.Type}}</td>
+        <td>{{content.Name}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
